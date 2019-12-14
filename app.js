@@ -19,6 +19,8 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
+  console.log("req body", JSON.stringify(req.body));
+  console.log("req params", JSON.stringify(req.params));
   res.send("Washroom Google Actions - POST");
 });
 
