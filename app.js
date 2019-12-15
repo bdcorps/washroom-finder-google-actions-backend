@@ -22,7 +22,7 @@ app.post("/", function(req, res) {
   console.log("req body", JSON.stringify(req.body));
   console.log("req params", JSON.stringify(req.params));
 
-  const query = req.body.intent.displayName;
+  const query = req.body.queryResult.intent.displayName;
 
   if (query == "Nearest Washroom") {
     console.log("washrrom");
